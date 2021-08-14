@@ -1,0 +1,338 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 68px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(24, 25, 26, 0) 0%, rgba(8, 8, 8, 0.322) 50%), url(../img/principal1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;    
+}
+
+.menu{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #0F3F7F 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);        
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    transform: translate(0);
+    color: #fff;
+    text-decoration: none;
+}
+
+/*cuerpo*/
+
+.titulo{    
+    text-align: center;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    font-size: 40px;
+    }
+
+.subtitulo{
+text-align: center;
+font-weight: 50;
+color: rgb(255, 255, 255);
+margin-bottom: 30px;
+font-size: 30px;
+}
+
+/*  mision-vision-objetivo*/
+
+.segmentoqs{
+    background-color: #0F3F7F;
+    padding: 1cm;    
+}
+
+.quienest{    
+   display: flex;
+   justify-content: space-around;   
+   background-color: white;
+}
+.servicios{       
+    padding: 0.5cm;
+    background-color:  white;    
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;    
+}
+
+/* segundo segmento*/
+.gallery{
+    padding: 1cm;
+    background-color: #0F3F7F;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;    
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    }
+
+    .imagen-light{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(100%);
+        transition: tramsform .2s ease-in-out;
+    }
+
+    .show{
+        transform: translate(0);
+    }
+
+    .agregar-imagen{
+        object-fit: cover;
+        width: 60%;
+        border-radius: 10px;
+        transform: scale(0);
+        transition: transform .3s .2s;
+    }
+
+.showImage{
+    transform: scale(1);
+}
+
+    .close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+
+    /* formulario */
+
+    .formulario-contacto{
+        background-color: #0F3F7F;
+        padding: 1cm;
+    }
+    .contact-info{
+        padding-top: 200px;
+        width: 200px;
+        height: 600px;
+        background-color: #0F3F7F;
+        color: white;
+        text-align: center;
+        margin: 0 0 5rem 0;
+    }
+    
+    .contact-text{
+        padding-top: 80px;
+        width: 600px;
+        height: 600px        
+    }
+
+    .contact-form{
+        display:flex;
+        width: 800px;
+        height: 600px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 255.3);
+    } 
+
+
+   .contact-form form p {
+        margin: 0;
+        padding: 1em;
+    }
+    
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea{
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        background: none;
+        outline: 0;
+        border-bottom: 2px solid black;
+    }
+
+    .contact-form form button{
+        background: #0F3F7F;
+        color: white;
+        border: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 30%;
+        width: 200px; height: 50px;        
+    }
+
+    /*footer*/
+
+    .id-final{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .id-final div {
+        padding-top: 1cm;
+        padding-left: 2cm;
+        margin: 10px;
+        /*text-align: center;*/
+        line-height: 20px;
+        font-size: 10px;
+    }
+
+
+    @media screen and (max-width:700px) {
+        .menu-navegacion{
+            width: 50vw;
+        }
+
+        .titulo{
+            font-size: 40px;
+        }
+
+        .quienest{    
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: white;   
+         }
+
+         .id-final{
+             padding: 0%;
+             width: 450px;            
+            flex-direction: column;            
+            text-align: center;
+            background-color: white;
+         }
+
+        .checklist-servicios{
+            width: 80%;
+        }
+
+        .agregar-imagen{
+            width: 80%;
+        }
+
+        .img-galeria{
+            width: 45%;
+        } 
+        
+        .contact-form{   
+            padding: 0%;
+            width: 400px;
+            height: 600;
+            flex-direction: column;
+         }
+         .contact-info{
+            padding-top: 10px;
+            width: 400px;
+            height: 200px;
+            background-color: #0F3F7F;
+            color: white;
+        }
+
+        .contact-text{
+            padding-top: 0%;
+            width: 400px;
+            height: 400px        
+        }
+
+        .contact-form form button{
+            background: #0F3F7F;
+            color: white;
+            border: 0px;
+            text-align: center;
+            margin-left: 2%;
+        }
+
+        .contact-form form p {
+            padding: 0.5em;
+            text-align: center;
+        }
+        
+        .contact-form form input,
+        .contact-form form textarea{
+            width: 90%;
+            padding: 0.4em;
+            border: none;
+            background: none;
+            outline: 0;
+            border-bottom: 1px solid black;
+        }
+        
+    }

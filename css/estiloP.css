@@ -80,5 +80,8 @@ ul.slider li:first-child{
 }
 
     @media screen and (max-width:700px) {
-        /**/
+      .img-galeriahp{
+        margin: auto;
+        width: 300px; height: 200px;
+    }
     }
